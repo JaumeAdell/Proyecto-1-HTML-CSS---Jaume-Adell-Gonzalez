@@ -23,29 +23,41 @@ a {
   color: inherit;
 }
 
-header {
-  min-height: 100vh;
-  background-image: url(./WallpaperImage/KyrtiuBackground.jpg);
+.hero_btn{
+  background-color: var(--secondarycolor);
+  color: var(--primarycolor);
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--primarycolor);
+  width: fit-content;
+}
+
+body > header {
+  background-image: url(./WallpaperImage/kamurochoWallpaper.jpg);
   background-position: center;
   background-size: cover;
 }
 
-header > nav {
-  height: 170px;
+body > header > nav {
+  height: 10vh;
   color: var(--secondarycolor);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing);
+  background-color: var(--primarycolor);
+  /*border-style:double;
+  border-color: var(--secondarycolor);
+  border-radius: 2px;*/
 }
 
-header > nav > ul {
+body > header > nav > ul {
   display: flex;
   gap: var(--spacing);
 }
 
-header > nav > img {
-  height: 150px;
+body > header > nav > img {
+  height: 92px;
   width: auto;
 }
 
@@ -57,4 +69,156 @@ header > nav > img {
   #navlinks {
     display: none;
   }
+}
+
+#hero{
+  color: var(--secondarycolor);
+  min-height: 100%;
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  justify-content: center;
+  align-items: flex-start;
+  height: 90vh;
+  text-align: justify;
+}
+
+h1{
+  font-size: 28px;
+}
+
+p{
+  font-size: 16px;
+}
+
+section > header{
+  padding: var(--spacing);
+}
+
+section > header> div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section ul {
+  padding: var(--spacing);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing);
+}
+
+section ul img {
+  width: 100%;
+  aspect-ratio: 1 / 1.1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#featured_works{
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+  height: auto;
+}
+
+#about_me{
+  background-color: rgba(238, 238, 238, 0.308);
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  max-width: 1800px;
+  height: auto;
+  min-height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: var(--spacing);
+  margin-bottom: 3rem;
+  background-image: url(./WallpaperImage/background_aboutme.png);
+  background-position: 8% 65%;
+  background-size: cover;
+}
+
+
+.about_image img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1.1;
+  object-fit: cover;
+  border-radius: 8px;
+  object-position: top center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+  
+}
+
+.about_text{
+  flex: 1;
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.267);
+  background-color:#6b0e0b1e;
+
+}
+
+@media (max-width: 768px) {
+  #about_me {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #featured_works {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+footer{
+  height: auto;
+  color: var(--secondarycolor);
+  display: flex;
+  align-items: flex-start;
+  padding: var(--spacing);
+  background-color: var(--primarycolor);
+  flex-direction: column;
+
+}
+
+.formulario{
+  display: flex;
+  align-items: center;
+  height: auto;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.email_kiryu{
+  font-weight: 500;
+  font-style: oblique;
+  font-size: 16px;
+}
+
+.form_btn{
+  background-color: var(--secondarycolor);
+  color: var(--primarycolor);
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--primarycolor);
+  width: fit-content;
 }
